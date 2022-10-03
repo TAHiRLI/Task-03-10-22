@@ -75,12 +75,20 @@
 .d-inline-block{
     display: inline-block;
 }
+.overflow-hidden{
+    overflow: hidden;
+}
 
 /* ================ */
 
-/* Grid config */
+/* border Radius config */
 
-
+.b-radius-5{
+    border-radius: 5px;
+}
+.b-radius-10{
+    border-radius: 10px;
+}
 
 /* ============== */
 
@@ -401,5 +409,9 @@
 /* Transition */
 .transition-5{
     transition: 0.5s;
+}
+
+.transition-3{
+    transition: 0.3s;
 }
 /* =============== */

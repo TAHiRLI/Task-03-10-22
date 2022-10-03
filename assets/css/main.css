@@ -61,3 +61,59 @@ header h3{
     right: -130px;
 }
 /* ============ */
+
+/* section cards */
+
+.cards{
+    justify-content: flex-start;
+}
+
+.cards-title .lined-icon::after, .cards-title .lined-icon::before{
+
+    background-color: black;
+
+}
+.pic-div {
+    cursor: pointer;
+    width: 30%;
+    margin: 20px
+}
+.pic-div img{
+    border-radius: 10px;
+}
+.plus{
+    opacity: 0;
+
+}
+
+.pic-div:hover .plus{
+    opacity: 1;
+}
+.overlay{
+    opacity: 0;
+}
+.pic-div:hover .overlay{
+    opacity: 0.8;
+}
+
+
+/* ====== */
+
+
+/* Responsive section */
+
+@media (max-width: 576px) {
+    .pic-div{
+        
+        width: 90%;
+        margin: 0;
+    }
+    .cards{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    
+}
+
+/* ==================== */
