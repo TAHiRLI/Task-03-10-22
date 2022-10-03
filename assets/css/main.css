@@ -46,9 +46,13 @@ nav{
   font-size: 45px;
   position: relative;
 }
+
+header{
+    height: 800px;
+}
 .header-text {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 180px;
+   
 }
 
 header h3 {
