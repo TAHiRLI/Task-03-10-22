@@ -1,0 +1,63 @@
+/* GLOBALS */
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+a:hover{
+    color: #1abc9c;
+
+}
+
+#logo{
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* ========== */
+
+/* Header */
+
+.title{
+    font-size: 4rem;
+}
+.lined-icon {
+    font-size: 45px;
+    position: relative;
+
+}
+.header-text{
+    top: 55%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+header h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.lined-icon::before{
+    content: '';
+    width: 110px;
+    height:4px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    top: 25px;
+    left: -130px;
+}
+.lined-icon::after{
+    content: '';
+    width: 110px;
+    height:4px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    top: 25px;
+    right: -130px;
+}
+/* ============ */
