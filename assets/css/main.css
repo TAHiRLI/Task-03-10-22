@@ -15,9 +15,29 @@ a:hover {
   font-weight: 800;
 }
 
+button{
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    display: none;
+    
+}
+button::before{
+content: attr(btn-content);
+}
+button:hover{
+    box-shadow: 0 1px 5px white;
+}
+
 /* ========== */
 
 /* Header */
+nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
 
 .title {
   font-size: 4rem;
@@ -93,7 +113,7 @@ header h3 {
 /* ====== */
 
 /* Responsive section */
-@media (max-width:300px) {
+/* @media (max-width:300px) {
     .lined-icon{
         display: none;
     }
@@ -107,14 +127,22 @@ header h3 {
         font-size: 20px;
     }
     
-}
+} */
 @media (max-width: 576px) {
   header ul {
     display: none;
   }
+  button{
+    display: block;
+    border-radius: 50% !important;
+    width: 50px;
+    height: 41px;
+}  
+button::before{
+    content: '';
+}
   #logo {
     font-size: 20px;
-    text-align: center;
     width: 100%;
   }
   .title{
@@ -135,10 +163,13 @@ header h3 {
     header ul {
         display: none;
       }
+    button{
+        display: block;
+    }  
+
+
       #logo {
         font-size: 26px;
-        text-align: center;
-        width: 100%;
       }
       .title{
         font-size: 50px;
